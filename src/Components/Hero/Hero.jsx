@@ -12,18 +12,17 @@ const Hero = () => {
           <IoIosHeartEmpty />
           <span> AI-Powered Child Health Technology</span>
         </div>
-
       </div>
 
       <div className="hero-middle">
-      <h1 className="gradient-text">Detecting Malnutrition</h1>
-      <h3 className="gradient-text">Before It's Too Late</h3>
-      <p>
-        NutriScan harnesses the power of artificial intelligence to identify
-        malnutrition in children through advanced image analysis and
-        comprehensive health parameters.{" "}
-        <span>Early detection saves lives.</span>
-      </p>
+        <h1 className="gradient-text">Detecting Malnutrition</h1>
+        <h3 className="gradient-text">Before It's Too Late</h3>
+        <p>
+          NutriScan harnesses the power of artificial intelligence to identify
+          malnutrition in children through advanced image analysis and
+          comprehensive health parameters.{" "}
+          <span>Early detection saves lives.</span>
+        </p>
       </div>
 
       <div className="hero-cta">
@@ -38,7 +37,7 @@ const Hero = () => {
 
       <div className="hero-cards">
         <div className="hero-card one">
-          <h3>95%</h3>
+          <h3>99.3%</h3>
           <p>Detection Accuracy</p>
         </div>
 
