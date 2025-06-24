@@ -1,0 +1,116 @@
+.footer {
+  background-color: #0e0b23;
+  color: #ffffff;
+  padding: 3rem 4rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12rem;
+  border-bottom: 1px solid #2a263c;
+  padding-bottom: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  font-size: 1rem;
+}
+
+.middle{
+    margin-left: 10rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.logo-icon {
+  color: #a3a3ff;
+  background-color: #1d1933;
+  padding: 0.3rem;
+  border-radius: 8px;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #ccc;
+  width: 30rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.icon {
+  background-color: #1d1933;
+  padding: 0.7rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  color: #ccc;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.footer-bottom p{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.footer-bottom .heart-icon {
+  color: red;
+  margin: 0 0.2rem;
+}
+
+.footer-links a {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}

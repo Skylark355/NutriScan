@@ -1,0 +1,193 @@
+.test {
+  padding: 3rem ;
+  background: linear-gradient(100deg, #d7e5e0 50%, #e2eaf8 100%);
+  text-align: center;
+
+}
+
+.test h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.test span {
+  color: #0a7658;
+}
+
+.test p {
+  width: 60%;
+  font-size: 1.2rem;
+  margin: auto;
+  color: rgb(36, 36, 36);
+  margin-bottom: 2rem;
+}
+
+/* Layout */
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left card */
+.form-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.form-card .brain{
+    height: 2rem;
+}
+
+.form-card h3{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    gap: 0.5rem;
+}
+
+.form-card h4{
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #075c47;
+}
+
+.upload-box {
+  border: 2px dashed #a0d9c7;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: #f4fefc;
+}
+
+.upload-icon {
+  font-size: 2rem;
+  color: #0a7658;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.upload-icon img{
+    height: 3rem;
+    margin: 0.5rem 0;
+}
+
+.upload-box p{
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.analyze-btn {
+  margin-top: 1.5rem;
+  grid-column: span 2;
+  background: linear-gradient(100deg, #0a7658, 50%, #4884bf);
+  color: white;
+  padding: 0.75rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.analyze-btn img{
+    height: 2rem;
+     filter: invert(100%) ;
+}
+
+.analyze-btn:hover {
+  background: #075c47;
+}
+
+/* Right card */
+.result-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.result-card h3{
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.result-body {
+  margin-top: 1rem;
+  text-align: center;
+  color: #333;
+  margin-top: 5rem;
+}
+
+.result-body p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #075c47;
+}
+
+.result-icon {
+ display: flex;
+ justify-content: center;
+ height: 4.5rem;
+  margin-bottom: 1rem;
+}

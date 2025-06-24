@@ -1,0 +1,152 @@
+.impact {
+  padding: 3rem;
+  background: linear-gradient(100deg, #0a7658, 98%, #4884bf);
+  text-align: center;
+  color: white;
+}
+
+.impact h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.impact p {
+  width: 60%;
+  font-size: 1.2rem;
+  margin: 0 auto 2rem;
+  color: white;
+}
+
+.impact-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.impact-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+}
+
+.impact-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.impact-card h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.impact-card h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.3rem 0;
+}
+
+.impact-card p {
+  font-size: 0.9rem;
+  color: #e0f0ea;
+  width: fit-content;
+}
+
+.join-section {
+  color: white;
+  margin-top: 5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 1.5rem;
+  border: 0.5px solid #a0d9c7;
+}
+
+.join-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  padding: 4rem 2rem;
+}
+
+.join-text {
+  flex: 1.2;
+  text-align: left;
+}
+
+.join-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.join-text p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  width: 80%;
+  line-height: 1.6;
+}
+
+.join-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.join-text li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.join-text li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #90f7c5;
+  font-size: 1rem;
+}
+
+/* Right Card */
+.join-card {
+  flex: 0.5;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-icon {
+  font-size: 5rem;
+  color: #aef2d4;
+  margin-bottom: 1rem;
+}
+
+.join-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.join-card p {
+  font-size: 1rem;
+  color: #e0f7ef;
+  margin-top: 0.5rem;
+}
