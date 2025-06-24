@@ -135,3 +135,247 @@
 .three h3 {
   color: #0a7658;
 }
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+
+  .hero-label {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-middle h1 {
+    font-size: 2rem;
+  }
+
+  .hero-middle h3 {
+    font-size: 1.5rem;
+  }
+
+  .hero-middle p {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .hero-cta button {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .hero-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .hero-card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .hero {
+    padding: 3rem 2rem;
+  }
+
+  .hero-label {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .hero-middle {
+    margin-top: 1rem;
+  }
+
+  .hero-middle h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-middle h3 {
+    font-size: 2.8rem;
+  }
+
+  .hero-middle p {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .hero-cta button {
+    width: 100%;
+    justify-content: center;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .hero-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 20rem;
+    padding: 1.2rem;
+  }
+
+  .hero-card h3 {
+    font-size: 1.7rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)  
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* HERO SECTION */
+  .hero {
+    padding: 3rem 2rem;
+  }
+
+  .hero-middle h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-middle h3 {
+    font-size: 2.8rem;
+  }
+
+  .hero-middle p {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  .hero-cta {
+    /* flex-direction: column; */
+    /* align-items: center; */
+  }
+
+  .hero-cta button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-cards {
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    width: 40rem;
+  }
+
+  .hero-card {
+    width: 30%;
+    margin-bottom: 2rem;
+  } 
+}
+
+
+/* 
+  ##Device = Laptops, Desktops  
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  /* HERO SECTION */
+  .hero {
+    padding: 4rem 3rem;
+  }
+
+  .hero-middle h1 {
+    font-size: 4rem;
+  }
+
+  .hero-middle h3 {
+    font-size: 3.2rem;
+  }
+
+  .hero-middle p {
+    font-size: 1.3rem;
+    width: 80%;
+  }
+
+  .hero-cta button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.8rem;
+  }
+
+  .hero-cards {
+    gap: 2.5rem;
+  }
+
+  .hero-card {
+    width: 16rem;
+  }
+
+}
+
+
+/* 
+  ##Device = Large Desktops / HD+ Monitors
+  ##Screen = 1281px and above
+*/
+@media (min-width: 1281px) {
+
+  /* HERO SECTION */
+  .hero {
+    padding: 6rem 5rem;
+  }
+
+  .hero-middle h1 {
+    font-size: 5rem;
+  }
+
+  .hero-middle h3 {
+    font-size: 4rem;
+  }
+
+  .hero-middle p {
+    font-size: 1.6rem;
+    width: 65%;
+  }
+
+  .hero-cta button {
+    font-size: 1.1rem;
+    padding: 0.75rem 2.5rem;
+  }
+
+  .hero-cards {
+    gap: 4rem;
+  }
+
+  .hero-card {
+    width: 20rem;
+  }
+
+}

@@ -78,3 +78,175 @@
   text-align: left;
   width: fit-content;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .how-it-works {
+    padding: 2rem 1rem;
+  }
+
+  .how-it-works h1 {
+    font-size: 2rem;
+  }
+
+  .how-it-works p {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .card-image {
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .how-it-works {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .how-it-works h1 {
+    font-size: 2.6rem;
+  }
+
+  .how-it-works p {
+    width: 90%;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .card-image {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+ /* HOW IT WORKS */
+  .how-it-works {
+    padding: 3rem 2rem;
+  }
+
+  .how-it-works h1 {
+    font-size: 2.8rem;
+  }
+
+  .how-it-works p {
+    width: 80%;
+    font-size: 1.1rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  
+}
+
+
+/* 
+  ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+ /* HOW IT WORKS */
+  .how-it-works {
+    padding: 3rem 2rem;
+  }
+
+  .how-it-works h1 {
+    font-size: 3rem;
+  }
+
+  .how-it-works p {
+    font-size: 1.1rem;
+    width: 70%;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+}
+
+/* 
+  ##Device = Desktops  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  /* HOW IT WORKS */
+  .how-it-works {
+    padding: 5rem 4rem;
+  }
+
+  .how-it-works h1 {
+    font-size: 3.5rem;
+  }
+
+  .how-it-works p {
+    width: 65%;
+    font-size: 1.3rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1.05rem;
+  }
+}

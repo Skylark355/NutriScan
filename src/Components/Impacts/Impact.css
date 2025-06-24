@@ -150,3 +150,298 @@
   color: #e0f7ef;
   margin-top: 0.5rem;
 }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .impact {
+    padding: 2rem 1rem;
+  }
+
+  .impact h1 {
+    font-size: 2rem;
+  }
+
+  .impact p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .impact-cards {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .impact-card {
+    padding: 1.2rem;
+  }
+
+  .impact-icon {
+    font-size: 2.2rem;
+  }
+
+  .impact-card h2 {
+    font-size: 2rem;
+  }
+
+  .impact-card h4 {
+    font-size: 1rem;
+  }
+
+  .impact-card p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .join-section {
+    margin-top: 3rem;
+    border-radius: 1rem;
+  }
+
+  .join-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .join-text {
+    text-align: left;
+    width: 100%;
+  }
+
+  .join-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .join-text p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .join-text li {
+    font-size: 0.95rem;
+    padding-left: 1.2rem;
+  }
+
+  .join-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .join-icon {
+    font-size: 3rem;
+  }
+
+  .join-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .join-card p {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .impact {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+  }
+
+  .impact h1 {
+    font-size: 2.5rem;
+  }
+
+  .impact p {
+    width: 90%;
+    font-size: 1.1rem;
+    margin: 0 auto 2rem;
+  }
+
+  .impact-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .impact-card {
+    padding: 1.2rem;
+  }
+
+  .impact-icon {
+    font-size: 2.5rem;
+  }
+
+  .impact-card h2 {
+    font-size: 2rem;
+  }
+
+  .impact-card h4 {
+    font-size: 1rem;
+  }
+
+  .impact-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Join section */
+  .join-section {
+    margin-top: 4rem;
+    border-radius: 1rem;
+  }
+
+  .join-container {
+    flex-direction: column;
+    padding: 2.5rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .join-text {
+    text-align: left;
+    width: 100%;
+  }
+
+  .join-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .join-text p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .join-text li {
+    font-size: 0.95rem;
+  }
+
+  .join-card {
+    width: 100%;
+    padding: 1.8rem;
+  }
+
+  .join-icon {
+    font-size: 3.5rem;
+  }
+
+  .join-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .join-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  
+  /* IMPACT SECTION */
+  .impact {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .impact h1 {
+    font-size: 2.8rem;
+  }
+
+  .impact p {
+    width: 85%;
+  }
+
+  .impact-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .join-container {
+    flex-direction: column;
+  }
+
+  .join-text,
+  .join-card {
+    width: 100%;
+  }
+
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+/* IMPACT SECTION */
+  .impact {
+    padding: 3rem;
+  }
+
+  .impact h1 {
+    font-size: 3rem;
+  }
+
+  .impact p {
+    width: 70%;
+    font-size: 1.1rem;
+  }
+
+  .impact-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .join-container {
+    gap: 2rem;
+  }
+
+  .join-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .join-text p,
+  .join-text li {
+    font-size: 1rem;
+  }
+  
+}
+
+
+/* 
+  ##Device = Desktops  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  /* IMPACT SECTION */
+  .impact {
+    padding: 5rem 4rem;
+  }
+
+  .impact h1 {
+    font-size: 3.5rem;
+  }
+
+  .impact p {
+    width: 65%;
+    font-size: 1.3rem;
+  }
+
+  .impact-cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .join-container {
+    gap: 4rem;
+  }
+
+  .join-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .join-text p {
+    font-size: 1.2rem;
+  }
+
+  .join-text li {
+    font-size: 1.1rem;
+  }
+}

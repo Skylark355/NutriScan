@@ -1,8 +1,17 @@
 import React from "react";
 import "./Test.css";
-import brain from "../../assets/images/brain.png"
-import upload from "../../assets/images/upload.png"
+import brain from "../../assets/images/brain.png";
+import upload from "../../assets/images/upload.png";
+
 const Test = () => {
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      console.log("Selected file:", file.name);
+      // You can set it to state or preview it
+    }
+  };
+
   return (
     <div className="test">
       <h1>
@@ -17,18 +26,31 @@ const Test = () => {
       <div className="form-container">
         {/* AI Analysis Input */}
         <div className="form-card">
-           <h3>
+          <h3>
             <img src={brain} alt="" className="brain" /> AI Analysis Input
           </h3>
           <h4>Upload Child's Photo</h4>
 
-          <div className="upload-box">
-            <div className="upload-icon"> <img src={upload} alt="" /></div>
-            <p>Click to upload or drag and drop</p>
-            <small>PNG, JPG up to 10MB</small>
+          <form>
+            <div className="upload-box">
+            <label htmlFor="file-upload" className="upload-label">
+              <div className="upload-icon">
+                <img src={upload} alt="Upload icon" />
+              </div>
+              <p>Click to upload or drag and drop</p>
+              <small>PNG, JPG up to 10MB</small>
+              <input
+                type="file"
+                id="file-upload"
+                className="file-input"
+                accept="image/png, image/jpeg"
+                onChange={handleFileChange}
+              />
+            </label>
           </div>
+            <div className="form-grid">
 
-          <form className="form-grid">
+            
             <div className="form-group">
               <label>Weight (kg)</label>
               <input type="number" placeholder="e.g. 10.5" />
@@ -69,7 +91,6 @@ const Test = () => {
               <input type="date" />
             </div>
 
-            
             <div className="form-group">
               <label>Oedema</label>
               <select>
@@ -115,6 +136,7 @@ const Test = () => {
             <button className="analyze-btn" type="submit">
               <img src={brain} alt="" /> Analyze with AI
             </button>
+            </div>
           </form>
         </div>
 
@@ -122,7 +144,9 @@ const Test = () => {
         <div className="result-card">
           <h3>⚠️ Analysis Results</h3>
           <div className="result-body">
-            <div className="result-icon"><img src={brain} alt="" /></div>
+            <div className="result-icon">
+              <img src={brain} alt="" />
+            </div>
             <p>Upload an image and click “Analyze with AI” to see results.</p>
           </div>
         </div>

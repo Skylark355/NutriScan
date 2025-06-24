@@ -63,12 +63,24 @@
 }
 
 .upload-box {
+  position: relative;
   border: 2px dashed #a0d9c7;
   border-radius: 10px;
   padding: 1rem;
-  margin-bottom: 1.5rem;
   text-align: center;
   background: #f4fefc;
+  cursor: pointer;
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-input {
+  display: none;
 }
 
 .upload-icon {
@@ -79,6 +91,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 .upload-icon img{
@@ -190,4 +203,187 @@ textarea {
  justify-content: center;
  height: 4.5rem;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .test {
+    padding: 2rem 1rem;
+  }
+
+  .test h1 {
+    font-size: 2rem;
+  }
+
+  .test p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .form-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .form-card,
+  .result-card {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .form-card h3,
+  .result-card h3 {
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .form-card h4 {
+    font-size: 1rem;
+  }
+
+  .upload-icon {
+    font-size: 1.5rem;
+  }
+
+  .upload-icon img {
+    height: 2rem;
+  }
+
+  .upload-box p {
+    font-size: 0.9rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  .form-group label {
+    font-size: 0.8rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 0.45rem;
+  }
+
+  .analyze-btn {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .analyze-btn img {
+    height: 1.5rem;
+  }
+
+  .result-body {
+    margin-top: 3rem;
+  }
+
+  .result-body p {
+    font-size: 1rem;
+  }
+
+  .result-icon {
+    height: 3rem;
+  }
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+ 
+  /* TEST SECTION */
+  .form-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-card,
+  .result-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+ /* TEST SECTION */
+  .form-container {
+    gap: 2rem;
+  }
+
+  .form-card,
+  .result-card {
+    max-width: 48%;
+  }
+
+  .form-grid {
+    gap: 1rem;
+  }
+
+  .analyze-btn {
+    font-size: 1rem;
+  }
+  
+}
+
+/* 
+  ##Device = Desktops  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  
+  /* TEST SECTION */
+  .form-container {
+    gap: 4rem;
+  }
+
+  /* .form-card,
+  .result-card {
+    max-width: 600px;
+  } */
+
+  .form-card h3,
+  .result-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .form-grid {
+    gap: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .analyze-btn {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
 }
