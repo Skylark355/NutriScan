@@ -16,22 +16,22 @@ const Hero = () => {
       </div>
 
       <div className="hero-middle">
-        <h1 className="gradient-text">Detecting Malnutrition</h1>
+        <h1 className="gradient-text">Detecting Malnutrition </h1>
         <h3 className="gradient-text">Before It's Too Late</h3>
         <p>
           NutriScan harnesses the power of artificial intelligence to identify
           malnutrition in children through advanced image analysis and
-          comprehensive health parameters.{" "}
+          comprehensive health parameters.
+          <br />
           <span>Early detection saves lives.</span>
         </p>
       </div>
 
       <div className="hero-cta">
-        
         <a href="#test">
-        <button className="model" id="#test">
-          Test Our Model <FaArrowRight />
-        </button>
+          <button className="model" id="#test">
+            Test Our Model <FaArrowRight />
+          </button>
         </a>
 
         <button className="learn">
@@ -46,7 +46,10 @@ const Hero = () => {
         </div>
 
         <div className="hero-card two">
-          <h3 className="less"> <FaLessThan className="than"/> 10s </h3>
+          <h3 className="less">
+            {" "}
+            <FaLessThan className="than" /> 10s{" "}
+          </h3>
           <p>Analysis Time</p>
         </div>
 

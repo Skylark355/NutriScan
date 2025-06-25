@@ -7,6 +7,23 @@ const Test = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [prediction, setPrediction] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [previewImage, setPreviewImage] = useState(null);
+
+  // const handleFileChange = (e) => {
+  //   const file = e.target.files[0];
+  //   if (!file) return;
+
+  //   const validTypes = ["image/png", "image/jpeg"];
+  //   if (!validTypes.includes(file.type)) {
+  //     alert("Invalid file format. Please upload a PNG or JPEG image.");
+  //     e.target.value = ""; // reset the input
+  //     return;
+  //   }
+
+  //   if (file && (file.type === "image/png" || file.type === "image/jpeg")) {
+  //     setSelectedFile(file);
+  //   }
+  // };
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -18,8 +35,13 @@ const Test = () => {
       e.target.value = ""; // reset the input
       return;
     }
-    if (file && (file.type === "image/png" || file.type === "image/jpeg")) {
+
+    if (file && (file.type === "image/jpeg" || file.type === "image/png")) {
       setSelectedFile(file);
+      setPreviewImage(URL.createObjectURL(file));
+    } else {
+      alert("Please upload a PNG or JPG image");
+      setPreviewImage(null);
     }
   };
 
@@ -78,16 +100,32 @@ const Test = () => {
             <div className="upload-box">
               <label htmlFor="file-upload" className="upload-label">
                 <div className="upload-icon">
-                  <img src={upload} alt="Upload icon" />
+                  {previewImage ? (
+                    <img
+                      src={previewImage}
+                      alt="Preview"
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        borderRadius: "8px",
+                      }}
+                    />
+                  ) : (
+                    <img src={upload} alt="Upload icon" />
+                  )}
                 </div>
-                <p>Click to upload or drag and drop</p>
-                <small>PNG, JPG up to 10MB</small>
+                <p>
+                  {previewImage
+                    ? "Change image"
+                    : "Click to upload or drag and drop"}
+                </p>
                 <input
                   type="file"
                   id="file-upload"
                   className="file-input"
-                  // accept="image/png, image/jpeg"
+                  accept="image/png, image/jpeg"
                   onChange={handleFileChange}
+                  style={{ display: "none" }}
                 />
               </label>
             </div>
@@ -185,12 +223,37 @@ const Test = () => {
         {/* AI Results Placeholder */}
         {prediction && (
           <div className="result-card">
-            <h3>Analysis Results</h3>
+            <h3>Key parameters Detected</h3>
             <div className="result-body">
-              {/* <div className="result-icon">
-                <img src={brain} alt="" />
-              </div> */}
-              <p>{prediction.prediction}</p>
+              <h3>
+                Result from the scan is <span>{prediction.prediction}</span>
+              </h3>
+              {/* <h1>{prediction.prediction}</h1> */}
+              <h3>
+                The accuracy of this prediction is
+                <span> {prediction.model_accuracy}</span>
+              </h3>
+              <h3>
+                Estimated BMI <span>14.7</span>
+              </h3>
+
+              <div className="actions">
+                <p className="title">Recommended Actions: </p>
+                
+                  <li className="all">
+                    Immediate nutritional assessment recommended
+                  </li>
+                  <li className="all">Monitor weight gain over next 2 weeks</li>
+                  <li  className="all">Consider supplemental feeding program</li>
+                  <li className="all"> Schedule follow-up within 7 days</li>
+             
+              </div>
+            </div>
+
+            <div className="disclaimer">
+              <span>
+                <b>Disclaimer:</b> This prediction can make mistakes. Check important information..
+              </span>
             </div>
           </div>
         )}
