@@ -3,3 +3,11 @@
 button:hover{
   cursor: pointer;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}

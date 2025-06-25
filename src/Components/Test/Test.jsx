@@ -56,7 +56,7 @@ const Test = () => {
   };
 
   return (
-    <div className="test">
+    <div className="test" id="test">
       <h1>
         Test Our <span>AI Model</span>
       </h1>

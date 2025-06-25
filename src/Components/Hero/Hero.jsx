@@ -3,6 +3,7 @@ import "./Hero.css";
 import { FaArrowRight } from "react-icons/fa";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { TbBadge } from "react-icons/tb";
+import { FaLessThan } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -26,9 +27,12 @@ const Hero = () => {
       </div>
 
       <div className="hero-cta">
-        <button className="model">
+        
+        <a href="#test">
+        <button className="model" id="#test">
           Test Our Model <FaArrowRight />
         </button>
+        </a>
 
         <button className="learn">
           Learn more <TbBadge />
@@ -42,7 +46,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-card two">
-          <h3> 10s </h3>
+          <h3 className="less"> <FaLessThan className="than"/> 10s </h3>
           <p>Analysis Time</p>
         </div>
 
